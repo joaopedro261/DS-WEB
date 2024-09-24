@@ -1,2 +1,0 @@
-# Aula-02 
-Na nossa segunda aula fizemos outros conceitos um poucos mais avançados como botão, estilo de fonte, moldura, tabela também acessamos um site muito antigo e vimos como ele funciona, colocamos um botão que faz com que acesse outro site.
