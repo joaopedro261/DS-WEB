@@ -1,0 +1,1 @@
+Nessa atividade desenvolvemos nossa primeira pagina com alguns requisitos. E fiz sobre o São Paulo meu time de coração onde coloquei Icon, imagem, tabela,div,lista,formulario, botão, entrar em outro link e paragrafo.
