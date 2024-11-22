@@ -1,0 +1,1 @@
+Nesta aula fizemos um display com alguns comandos novos e a seguir aprendemos a fazer um pseudoclasse
