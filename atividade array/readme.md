@@ -1,1 +1,1 @@
-Fizemos duas atividades de arrays o segundo é arrays bidimensional
+Fizemos duas atividades de arrays o segundo é arrays bidimensional.
