@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer-01</title>
+    
+</head>
+<body>
+    
+    //exemplo 1
+    <h1>Coloque seu nome</h1>
+
+    <p>Nome inteiro:</p>
+    <input type="text" id="nome">
+    <br>
+    <button onclick="sauldar()">Entrar</button>
+    <br>
+    <h2 id="mensagem"></h2>
+
+
+    //exemplo 2
+    <h1>Coloque um numero</h1>
+
+    <p>Par ou Impar</p>
+    <input type="number" id="numero">
+    <br>
+    <button onclick="Valor()">Aperte</button>
+    <br>
+    <h2 id="mensagem"></h2>
+
+    //exemplo 3
+    <h1>Coloque uma String</h1>
+
+    <p>Retorna caixa alta</p>
+    <input type="text" id="palavra">
+    <br>
+    <button onclick="converterParaMaiusculo()">Transforme</button>
+    <br>
+    <h2 id="modificaçao"></h2>
+
+
+
+    //exemplo 4
+    <h1>Coloque um valor e uma porcentagem</h1>
+
+    <p>Retorna o valor acrescido da porcentagem indicada.</p>
+    <input type="number" id="numero2" placeholder="Digite um numero">
+    <input type="number" id="porcentagem" placeholder="Digite uma porcentagem">
+
+    <br>
+    <button onclick="numero1()">Aplique</button> 
+    
+    <br>
+    <h2 id="resultado1"></h2>
+
+
+    //exemplo 5
+    <div id="cor">
+        <button id="trocaCor">Pintar</button>
+      </div>
+      <style>
+      #cor {
+        background-color: #ffbc02;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+
+ 
+
+    //exemplo 6
+    <h1>Digite sua idade</h1>
+
+    <p>Qual sua idade?</p>
+    <input type="number" id="numero3">
+    <br>
+    <button onclick="idade()">Transforme</button>
+    <br>
+    <h2 id="resultado2"></h2>
+
+
+
+    //exemplo 7
+
+    <h1>digite o numero:</h1>
+    <input type="number" id="numero4">
+    <br>
+    <button onclick="verificarNumero()">clique aqui </button>
+    <p id="resultado5"></p>
+
+
+
+    //exemplo 8
+
+    <h1>Usuario:</h1>
+    <input type="text" id="nome8">
+    <br>
+    <h1>Senha:</h1>
+    <input type="password" id="pass" name="password" minlength="8" required />
+    <br>
+    <button onclick="validarLogin()">clique aqui </button>
+    <p id="resultado8"></p>
+
+
+    //exemplo9
+
+    <h1>digite o numero:</h1>
+    <input type="number" id="numero4">
+    <br>
+    <button onclick="verificarNumero3()">clique aqui </button>
+    <p id="resultado4"></p>
+   
+    <h1>Digite um número</h1>
+    <p>Primeiro número:</p>
+    <input type="number" id="operacao9">
+    <br>
+    <h1>Digite o segundo número</h1>
+    <p>Segundo número:</p>
+    <input type="number" id="operacao9">
+    <br>
+   
+    <h1>Escolha a operação</h1>
+<select id="operacao">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<br><br>
+<button onclick="calculadora()">Clique aqui</button>
+
+    //exemplo10
+
+    <h1>Coloque um Valor</h1>
+
+    <p>Par ou Impar sem parametro</p>
+    <input type="number" id="valorizando">
+    <br>
+    <button onclick="Valor1()">Aperte</button>
+    <br>
+    <h2 id="mensagem3"></h2>
+
+    //exemplo 11
+
+    <h1>Coloque um numero </h1>
+
+    <p>Qual o maior numero:</p>
+    <input type="number" id="numero01" placeholder="Digite o primeiro numero">
+    <input type="number" id="numero02" placeholder="digite o segundo numero">
+    <input type="number" id="numero03" placeholder="Digite o terceiro numero">
+
+    <br>
+    <button onclick="maiorNumero()">aplique</button> 
+    
+    <br>
+    <h2 id="resultado01"></h2>
+
+
+    //exemplo 12
+
+    <h1>Equilátero, Isósceles ou Escaleno.</h1>
+    <label for="lado">Primeiro lado:</label>
+    <input type="number" id="lado1"
+    ><br>
+    <label for="segundoLado">Segundo lado:</label>
+    <input type="number" id="lado2" >
+    <br>
+    <label for="terceiroLado">Terceiro lado:</label>
+    <input type="number" id="lado3"><br>
+    <button onclick="verificarTriangulo()">Calcular</button>
+    <h2 id="resultado50"><h2>
+
+
+
+<script src="script.js"></script>
+</html>

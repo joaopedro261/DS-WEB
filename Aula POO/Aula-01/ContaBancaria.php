@@ -13,11 +13,13 @@ class ContaBancaria{
     public function Depósitos(){
         return "Depositou 5.000,00";
     }
-    private function Saques(){
-        return "Sacou 100"
+    public function Sacar($saque){
+        $this->saldo-= $saque;
+        return "este é o nome saldo".$this->saldo;
     }
-    private function ConsultarSaldos(){
-        return "Saldo de 100.000,00"
+    public function ConsultarSaldo($deposito){
+        $this->saldo += $deposito;
+        return "Este é o novo saldo".$this->saldo;
     }
 }
 
@@ -28,6 +30,10 @@ class ContaBancaria{
     $Japa->Saldo = "123.50,00"; //Exibindo um atributo
     $Japa->TipodeConta = "Débito";
     echo $Japa->Depósitos();
+    echo"<br>";
+    echo $Japa->sacar();
+    echo "<br>";
+    echo $Japa->ConsultarSaldo(100);
 
     $Giovana = new ContaBancaria(); //Inicio do objeto
     $Giovana->NumerodaConta = "987954"; //Atribuindo valor a um atributo

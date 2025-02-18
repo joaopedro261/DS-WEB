@@ -7,7 +7,7 @@ class Veiculo {
 
     protected $seguro;
 
-    private $renavam;
+    public $renavam;
 
     //Metodo:
     public function ligar(){
