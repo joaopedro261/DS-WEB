@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat com Meu Amor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .chat-box {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      overflow-y: auto;
+      max-height: 70vh;
+    }
+
+    .msg {
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 15px;
+      max-width: 80%;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .me {
+      background-color: #ffb6c1;
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    .her {
+      background-color: #d3eaff;
+      align-self: flex-start;
+      text-align: left;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #startBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #ff6b81;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #startBtn:hover {
+      background-color: #e65a70;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chat-box" id="chat">
+    <!-- Mensagens vão aparecer aqui -->
+  </div>
+
+  <button id="startBtn">Iniciar Conversa 💬</button>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const startBtn = document.getElementById("startBtn");
+
+    const mensagens = [
+      { texto: "Oi, amor...", tipo: "me" },
+      { texto: "Oi, meu bem! Que surpresa é essa? 😳", tipo: "her" },
+      { texto: "É só uma forma fofa de te lembrar o quanto eu te amo 💖", tipo: "me" },
+      { texto: "Awnnn 🥺", tipo: "her" },
+      { texto: "Você é a melhor parte do meu dia, sabia?", tipo: "me" },
+      { texto: "Agora clica no botão aqui embaixo... Tenho algo mais pra te mostrar 💌", tipo: "me" }
+    ];
+
+    let index = 0;
+
+    startBtn.addEventListener("click", () => {
+      startBtn.style.display = "none";
+      mostrarMensagem();
+    });
+
+    function mostrarMensagem() {
+      if (index >= mensagens.length) {
+        const carta = document.createElement("div");
+        carta.classList.add("msg", "me");
+        carta.innerHTML = "<strong>Te amo demais, minha princesa ❤️<br>Obrigado por ser minha!</strong>";
+        chat.appendChild(carta);
+        return;
+      }
+
+      const msg = document.createElement("div");
+      msg.classList.add("msg", mensagens[index].tipo);
+      msg.textContent = mensagens[index].texto;
+      chat.appendChild(msg);
+      index++;
+
+      setTimeout(mostrarMensagem, 1500); // Tempo entre mensagens
+    }
+  </script>
+
+</body>
+</html>
